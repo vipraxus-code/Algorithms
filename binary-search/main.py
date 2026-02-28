@@ -10,12 +10,12 @@ def binary_search(arr, item):
             return mid
         elif guess > item:
             high = mid - 1
-            print(f"It's not {mid}")
+            print(f"It's under {mid}")
         else:
             low = mid + 1
-            print(f"It's not {mid}")
+            print(f"It's above {mid}")
     return None
 
-array = list(range(101))
+arr = list(range(101))
 
-binary_search(array, 97)
+print(binary_search(arr, 18))
